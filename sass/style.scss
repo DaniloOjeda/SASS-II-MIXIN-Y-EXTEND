@@ -1,0 +1,112 @@
+@import "fuentes";
+@import "generales";
+@import "navbar";
+@import "footer";
+
+
+.container2{
+    padding: 0 5px ;
+    margin: 5px 50px;
+    h2{
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        font-size: 3rem;
+     }
+     p{
+         margin-top: 20px;
+         margin-bottom: 40px;
+     }
+ }
+
+.meditacion{
+    padding: 0 5px;
+    margin: 5px 50px;
+    h3{
+       display: flex;
+       justify-content: center;
+       padding: 10px 0; 
+       font-size: 3rem;
+     }
+     p{
+     margin-top: 20px;
+     }   
+ }
+
+
+@media(max-width: 700px){
+    header{
+        width: 100%;
+        height: 70vh;
+        background-color: rgb(52, 46, 46);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+        margin-bottom: 20px;
+        nav{
+            height: 100%;
+            ul{
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                li{
+                    list-style: none;
+                    text-align: center;
+                    font-weight: 600;
+                    a{  
+                        text-decoration: none;
+                        text-transform:uppercase;
+                        color: rgb(173, 138, 47);
+                    }
+                }
+            }
+        }
+    }
+    .container2{
+        padding: 0 5px ;
+        margin: 5px 20px;
+    }
+    
+    .meditacion{
+        padding: 0 5px;
+        margin: 5px 20px;
+    }
+}
+
+h1, h4, h5{
+    font-size: 2.5rem;
+}
+
+.altura {
+    height: 50rem;
+}
+
+.aprendizaje {
+    border: 1px solid blueviolet;
+    background-color: rgb(233, 167, 208, 0.500);
+}
+
+.container2{
+    @extend .aprendizaje;
+}
+
+.meditacion{
+    @extend .aprendizaje;
+}
+
+.card{
+    @extend .aprendizaje;
+    background-color: rgb(157, 238, 157, 0.500);
+}
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+.my_mixin {
+    @include sizes (600px, 400px)
+}
+

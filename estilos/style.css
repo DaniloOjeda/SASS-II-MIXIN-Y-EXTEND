@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(52, 46, 46);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  height: 100%;
+  width: 70%;
+}
+header nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+  text-align: center;
+  font-weight: 600;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(173, 138, 47);
+}
+
+.icono {
+  padding: 10px;
+}
+.icono:hover {
+  height: 100px;
+}
+
+.container2 {
+  padding: 0 5px;
+  margin: 5px 50px;
+}
+.container2 h2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 3rem;
+}
+.container2 p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.meditacion {
+  padding: 0 5px;
+  margin: 5px 50px;
+}
+.meditacion h3 {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 3rem;
+}
+.meditacion p {
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  header {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(52, 46, 46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    margin-bottom: 20px;
+  }
+  header nav {
+    height: 100%;
+  }
+  header nav ul {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header nav ul li {
+    list-style: none;
+    text-align: center;
+    font-weight: 600;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(173, 138, 47);
+  }
+  .container2 {
+    padding: 0 5px;
+    margin: 5px 20px;
+  }
+  .meditacion {
+    padding: 0 5px;
+    margin: 5px 20px;
+  }
+}
+h1, h4, h5 {
+  font-size: 2.5rem;
+}
+
+.altura {
+  height: 50rem;
+}
+
+.aprendizaje, .card, .meditacion, .container2 {
+  border: 1px solid blueviolet;
+  background-color: rgba(233, 167, 208, 0.5);
+}
+
+.card {
+  background-color: rgba(157, 238, 157, 0.5);
+}
+
+.my_mixin {
+  height: 400px;
+  width: 600px;
+}/*# sourceMappingURL=style.css.map */
